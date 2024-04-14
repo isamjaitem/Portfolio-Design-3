@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* main start*/
+.main{  
+   padding-top: 50px;
+   background: #f7f7f9;
+}
+.main-start{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    border-radius: 15px; 
+}
+
+
+/* main end*/
+
+/* hero start*/
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f9;
+    padding: 100px 0px;
+    column-gap: 50px;
+}
+.hero .hero-img{
+    text-align:right;
+}
+
+.hero .hero-img img{
+    width: 400px;
+    border-radius: 50%;
+}
+.hero .hero-info h1{
+    font-weight: bold;
+}
+/* hero end*/
+
+/*skills start*/
+.skills{
+    background: #fff;
+}
+.skills .skills-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    margin-bottom: 30px;
+}
+.skills-range{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+.skills-data{
+    text-align: center;
+}
+.skills-data h4{
+    margin: 10px 0px;
+}
+
+/*skills end*/
+
+/*project start*/
+.project{
+    background: #fff;
+}
+.main-project-1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+
+}
+.project-1{
+    background: #f7f7f9;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.project-1-left{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.project-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+   
+}
+.project-2-left,
+.project-2-right{
+    background: #f7f7f9;
+    padding: 20px;
+}
+/*project end*/
+
+
+
+/*contact start*/
+.contact{
+    background: #f7f7f9;
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    padding: 40px;
+}
+.main-contact i {
+    font-size: 30px; 
+}
+.main-contact h3{
+    margin: 10px 0px;
+}
+.main-contact-right input,
+.main-contact-right textarea{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: none;
+    border: 1px solid red;
+    color: red;
+}
+.right{
+text-align: center;
+}
+.right p {
+    font-weight: bold;
+}
+
+/*contact end*/
+
+/*reponsive start*/
+@media (max-width:1050px) {
+    .project-2-left img,
+    .project-2-right img{
+        width: 350px;
+    }   
+}
+@media (max-width:990px) {
+    .project-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:766px) {
+.project-1-right img{
+    width: 350px;
+}
+.project-2-left img,
+.project-2-right img{
+    width: 250px;
+}
+.main-project-1{
+    display: flex;
+    flex-direction: column;
+    }
+
+.main-contact{
+    grid-template-columns: repeat(1,1fr);
+}
+
+}
+@media (max-width:750px) {
+    .skills .skills-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills-2{
+              grid-template-columns: repeat(2,1fr);
+    }
+    .hero .hero-img img{
+        width: 300px;
+    }
+}
+@media (max-width:650px) {
+    .hero .hero-img img{
+        width: 250px;
+    }
+}
+@media (max-width:550px) {
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .hero .hero-img {
+        text-align: center;
+    }
+    .project-2{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 30px;   
+    }
+}
+@media (max-width:450px) {
+    .hero .hero-info p{
+        font-size:5vw;
+    }
+    .main-contact-right textarea{
+        width: 350px;
+    }
+}
+@media (max-width:400px) {
+    .main-contact-right textarea{
+        width: 300px;
+    }
+}
+@media (max-width:380px) {
+    .project-1-left,
+    .project-1-right
+    {
+        padding: 10px;
+    }
+    .project-1-left p,
+    .project-1-right p{
+        font-size:4vw;
+    }
+    .project-1-right img{
+        width: 250px;
+    }
+}
+@media (max-width:350px) {
+    .main-start{
+        flex-direction:column;
+
+    }
+    .main-contact-right textarea{
+        width: 250px;
+    }
+
+}
+
+/*reponsive end*/
+
+
+
+
+
+
